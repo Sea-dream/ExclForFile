@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="esdk-obs-java-3.21.4-javadoc">
-    <CLASSES />
-    <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/dist/lib/esdk-obs-java-3.21.4-javadoc.jar!/" />
-    </JAVADOC>
-    <SOURCES />
-  </library>
-</component>
