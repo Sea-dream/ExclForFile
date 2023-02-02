@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c8eeed3-fe03-4edb-bbdf-1f08f1b6ceb4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExclForFile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ExclForFile.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lib/esdk-obs-java-3.21.4-javadoc.jar" beforeDir="false" />
-    </list>
+    <list default="true" id="7c8eeed3-fe03-4edb-bbdf-1f08f1b6ceb4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +30,19 @@
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -45,7 +53,7 @@
       <updated>1675303000910</updated>
       <workItem from="1675303002754" duration="501000" />
       <workItem from="1675303515339" duration="117000" />
-      <workItem from="1675303714861" duration="24000" />
+      <workItem from="1675303714861" duration="106000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675303067073</created>
@@ -61,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675303347765</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix(ExcelForFile): 修复错误依赖">
+      <created>1675303790850</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675303790850</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,6 +98,7 @@
     <option name="CODE_SMELLS_PROFILE" value="Project Default" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="fix(ExcelForFile): 增加本地依赖" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(ExcelForFile): 增加本地依赖" />
+    <MESSAGE value="fix(ExcelForFile): 修复错误依赖" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(ExcelForFile): 修复错误依赖" />
   </component>
 </project>
