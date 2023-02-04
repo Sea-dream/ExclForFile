@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c8eeed3-fe03-4edb-bbdf-1f08f1b6ceb4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExclForFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExclForFile.java" afterDir="false" />
-    </list>
+    <list default="true" id="7c8eeed3-fe03-4edb-bbdf-1f08f1b6ceb4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +74,7 @@
       <workItem from="1675303515339" duration="117000" />
       <workItem from="1675303714861" duration="106000" />
       <workItem from="1675337988826" duration="188000" />
-      <workItem from="1675489857913" duration="1428000" />
+      <workItem from="1675489857913" duration="1982000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675303067073</created>
@@ -115,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675338145573</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix(ExcelForFile): 运行新的文件">
+      <created>1675491476133</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675491476133</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +142,7 @@
     <MESSAGE value="fix(ExcelForFile): 增加本地依赖" />
     <MESSAGE value="fix(ExcelForFile): 修复错误依赖" />
     <MESSAGE value="fix(ExcelForFile): 补全依赖" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(ExcelForFile): 补全依赖" />
+    <MESSAGE value="fix(ExcelForFile): 运行新的文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(ExcelForFile): 运行新的文件" />
   </component>
 </project>
