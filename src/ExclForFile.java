@@ -39,21 +39,39 @@ public class ExclForFile {
         ObsClient obsClient = new ObsClient(ak, sk, endPoint);
         try {
             // TODO code application logic here
-            // 1.加载驱动
-//            Class.forName("com.mysql.cj.jdbc.Driver");
-//            // 2.用户信息和url
-//            String url = "jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=true";
-//            String username="root";
-//            String password="Cc26070119";
-//            Connection connection = DriverManager.getConnection(url,username,password);
-//            Statement statement = connection.createStatement();
-//            // 5.执行SQL的对象去执行SQL，返回结果集
-//            String sql = "SELECT * FROM test;";
-//            ResultSet resultSet = statement.executeQuery(sql);
+            // 获取attachment_id 串
+
+//            Workbook workbookPrefix = new Workbook();
+//            workbookPrefix.loadFromFile("F:\\test\\2022年报公众公司审计风险评价表-调整.xlsx");
+//            //获取工作表
+//            Worksheet sheetPrefix = workbookPrefix.getWorksheets().get(5);
+//            //导出文档数据
+//            DataTable dataTablePrefix = sheetPrefix.exportDataTable();
+//            DataRowCollection rowCollectionPrefix = dataTablePrefix.getRows();
+//            DataColumnCollection colCollectionPrefix = dataTablePrefix.getColumns();
+//            StringBuilder attachmentIdString = new StringBuilder();
+//            for (int i = 0; i < rowCollectionPrefix.size(); i++) {
+//                FileInfoClass fic = new FileInfoClass();
+//                for (int j = 0; j < colCollectionPrefix.size(); j++) {
+//                    if (colCollectionPrefix.get(j).getLabel().equals("recheck_attachment_id")) {
+////                        String currentString = "\"" + rowCollection.get(i).getString(j) + "\"";
+//                        attachmentIdString
+//                                .append("\"")
+//                                .append(rowCollectionPrefix.get(i).getString(j))
+//                                .append("\"")
+//                                .append(",");
+////                        System.out.println(colCollection.get(j).getLabel() + "：" + rowCollection.get(i).getString(j));
+//                    }
+//                }
+//            }
+//            System.out.println(attachmentIdString.toString());
+
+
+//            // 获取正式数据
             Workbook workbook = new Workbook();
-            workbook.loadFromFile("F:\\test\\2022年报公众公司审计风险评价表.xlsx");
+            workbook.loadFromFile("F:\\test\\2022年报公众公司审计风险评价表-调整.xlsx");
             //获取第一张工作表
-            Worksheet sheet = workbook.getWorksheets().get(3);
+            Worksheet sheet = workbook.getWorksheets().get(5);
             //导出文档数据
             DataTable dataTable = sheet.exportDataTable();
             DataRowCollection rowCollection = dataTable.getRows();
@@ -84,7 +102,7 @@ public class ExclForFile {
             }
 
             Workbook workbook2 = new Workbook();
-            workbook2.loadFromFile("F:\\test\\obsKey.xlsx");
+            workbook2.loadFromFile("F:\\test\\obsKey_调整.xlsx");
             Worksheet sheet2 = workbook2.getWorksheets().get(0);
             //导出文档数据
             DataTable dataTable2 = sheet2.exportDataTable();
@@ -120,6 +138,7 @@ public class ExclForFile {
                 try {
                     ObsObject obsObject = obsClient.getObject("docflex", item.getObsKeyString());
                     FileUtil.writeFromStream(obsObject.getObjectContent(), new File("test\\" + item.getFilePathInfo() + "\\" + item.getFileNameString()));
+                    System.out.println("Success key: " + item.getObsKeyString());
                 } catch (ObsException e) {
                     System.out.println("Error Message: " + e.getErrorMessage());
                     System.out.println("Error key: " + item.getObsKeyString());
@@ -134,7 +153,8 @@ public class ExclForFile {
             System.out.println("Host ID:" + e.getErrorHostId());
         } catch (Exception ex) {
             System.err.println(ex.getMessage());
-        } finally {
+        }
+        finally {
             if (obsClient != null) {
                 try {
                     obsClient.close();
