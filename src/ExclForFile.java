@@ -69,68 +69,27 @@ public class ExclForFile {
 
 //            // 获取正式数据
             Workbook workbook = new Workbook();
-            workbook.loadFromFile("F:\\test\\2022年报公众公司审计风险评价表-调整.xlsx");
+            workbook.loadFromFile("F:\\test\\rpreview.xlsx");
             //获取第一张工作表
-            Worksheet sheet = workbook.getWorksheets().get(5);
+            Worksheet sheet = workbook.getWorksheets().get(0);
             //导出文档数据
             DataTable dataTable = sheet.exportDataTable();
             DataRowCollection rowCollection = dataTable.getRows();
             DataColumnCollection colCollection = dataTable.getColumns();
-            Map<String, FileInfoClass> fileInfoClasses = new HashMap<>();
             List<FileInfoClass> result = new ArrayList<>();
             String lString = "end";
             for (int i = 0; i < rowCollection.size(); i++) {
                 FileInfoClass fic = new FileInfoClass();
-                StringBuilder filepatahString = new StringBuilder();
-                String atString = "";
                 for (int j = 0; j < colCollection.size(); j++) {
-                    if (colCollection.get(j).getLabel().equals("id")) {
-//                        String currentString = "\"" + rowCollection.get(i).getString(j) + "\"";
-                        filepatahString.append(rowCollection.get(i).getString(j)).append("-");
-//                        System.out.println(colCollection.get(j).getLabel() + "：" + rowCollection.get(i).getString(j));
+                    if (colCollection.get(j).getLabel().equals("fileName")) {
+                        fic.setFileNameString(rowCollection.get(i).getString(j));
                     }
-                    if (colCollection.get(j).getLabel().equals("cus_name")) {
-                        filepatahString.append(rowCollection.get(i).getString(j));
-                    }
-                    if (colCollection.get(j).getLabel().equals("recheck_attachment_id")) {
-                        atString = rowCollection.get(i).getString(j);
+                    if (colCollection.get(j).getLabel().equals("obsKey")) {
+                        fic.setObsKeyString(rowCollection.get(i).getString(j).substring(1));
                     }
 
                 }
-                fic.setFilePathInfo(filepatahString.toString());
-                fileInfoClasses.put(atString,fic);
-            }
-
-            Workbook workbook2 = new Workbook();
-            workbook2.loadFromFile("F:\\test\\obsKey_调整.xlsx");
-            Worksheet sheet2 = workbook2.getWorksheets().get(0);
-            //导出文档数据
-            DataTable dataTable2 = sheet2.exportDataTable();
-            DataRowCollection rowCollection2 = dataTable2.getRows();
-            DataColumnCollection colCollection2 = dataTable2.getColumns();
-            for (int i = 0; i < rowCollection2.size(); i++) {
-                FileInfoClass currentFileInfoClass = new FileInfoClass();
-                String atString = "";
-                String nameString = "";
-                String obsString = "";
-                for (int j = 0; j < colCollection2.size(); j++) {
-                    if (colCollection2.get(j).getLabel().equals("attachment_id")) {
-                        atString = rowCollection2.get(i).getString(j);
-//                        System.out.println(colCollection2.get(j).getLabel() + "：" + rowCollection2.get(i).getString(j));
-                    }
-                    if (colCollection2.get(j).getLabel().equals("obsKey")) {
-                        obsString = rowCollection2.get(i).getString(j).substring(1);
-//                        System.out.println(colCollection2.get(j).getLabel() + "：" + rowCollection2.get(i).getString(j));
-                    }
-                    if (colCollection2.get(j).getLabel().equals("file_original_name")) {
-                        nameString = rowCollection2.get(i).getString(j);
-//                        System.out.println(colCollection2.get(j).getLabel() + "：" + rowCollection2.get(i).getString(j));
-                    }
-                }
-                currentFileInfoClass.setFilePathInfo(fileInfoClasses.get(atString).getFilePathInfo());
-                currentFileInfoClass.setObsKeyString(obsString);
-                currentFileInfoClass.setFileNameString(nameString);
-                result.add(currentFileInfoClass);
+                result.add(fic);
             }
 
             // 创建ObsClient实例
