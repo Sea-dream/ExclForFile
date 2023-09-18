@@ -1,4 +1,4 @@
-/*
+package loadExcel;/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
@@ -16,9 +16,7 @@ import com.spire.xls.Worksheet;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -51,7 +49,7 @@ public class ExclForFile {
 //            DataColumnCollection colCollectionPrefix = dataTablePrefix.getColumns();
 //            StringBuilder attachmentIdString = new StringBuilder();
 //            for (int i = 0; i < rowCollectionPrefix.size(); i++) {
-//                FileInfoClass fic = new FileInfoClass();
+//                loadExcel.FileInfoClass fic = new loadExcel.FileInfoClass();
 //                for (int j = 0; j < colCollectionPrefix.size(); j++) {
 //                    if (colCollectionPrefix.get(j).getLabel().equals("recheck_attachment_id")) {
 ////                        String currentString = "\"" + rowCollection.get(i).getString(j) + "\"";

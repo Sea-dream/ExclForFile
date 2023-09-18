@@ -1,35 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7c8eeed3-fe03-4edb-bbdf-1f08f1b6ceb4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/createExcel/BaseParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/createExcel/BaseResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/createExcel/CardInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/createExcel/MainFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/createExcel/RequestParam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExclForFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExclForFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExclForFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loadExcel/ExclForFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileInfoClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loadExcel/FileInfoClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2LA9PyLHBErav5b51xefx9b6i1f" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RESTKit.sync" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist/lib/hutool-all-5.8.4.jar" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.40086675" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/IdeaProject/ExclForFile",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -38,7 +61,7 @@
       <recent name="E:\NetbeansProjects\ExclForFile\dist\lib" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MainFile">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -51,14 +74,28 @@
       </method>
     </configuration>
     <configuration name="ExclForFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ExclForFile" />
+      <option name="MAIN_CLASS_NAME" value="loadExcel.ExclForFile" />
       <module name="ExclForFile" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="createExcel.MainFile" />
+      <module name="ExclForFile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="createExcel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainFile" />
         <item itemvalue="Application.ExclForFile" />
       </list>
     </recent_temporary>
@@ -77,6 +114,7 @@
       <workItem from="1675337988826" duration="188000" />
       <workItem from="1675489857913" duration="1982000" />
       <workItem from="1684222090483" duration="2395000" />
+      <workItem from="1695020530721" duration="6649000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675303067073</created>
@@ -120,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1675491476133</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix(ExcelForFile): 修改">
+      <option name="closed" value="true" />
+      <created>1695020693518</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695020693518</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +182,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CODE_SMELLS_PROFILE" value="Project Default" />
@@ -145,6 +190,7 @@
     <MESSAGE value="fix(ExcelForFile): 修复错误依赖" />
     <MESSAGE value="fix(ExcelForFile): 补全依赖" />
     <MESSAGE value="fix(ExcelForFile): 运行新的文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(ExcelForFile): 运行新的文件" />
+    <MESSAGE value="fix(ExcelForFile): 修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(ExcelForFile): 修改" />
   </component>
 </project>
