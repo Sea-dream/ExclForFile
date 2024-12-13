@@ -11,5 +11,7 @@
     <orderEntry type="library" name="Spire.Xls" level="project" />
     <orderEntry type="library" name="esdk-obs-java-bundle-3.21.8" level="project" />
     <orderEntry type="library" name="hutool-all-5.8.4" level="project" />
+    <orderEntry type="library" name="guava-31.1-jre" level="project" />
+    <orderEntry type="library" name="spring-core-5.0.13.RELEASE" level="project" />
   </component>
 </module>

@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c8eeed3-fe03-4edb-bbdf-1f08f1b6ceb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tools/MyOBSClientRelease.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tools/MyOBSClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/guava_31_1_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/spring_core_5_0_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/files/lists.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/lib/guava-31.1-jre.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/lib/spring-core-5.0.13.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bidTest/BidTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tools/StringUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loadExcel/ExclForFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loadExcel/ExclForFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExclForFile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ExclForFile.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loadExcel/FileInfoClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loadExcel/FileInfoClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +38,12 @@
     &quot;assignee&quot;: &quot;Sea-dream&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Sea-dream/ExclForFile.git&quot;,
-    &quot;accountId&quot;: &quot;83e6c1a2-4dff-4a3d-beaa-8da48c34305c&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:Sea-dream/ExclForFile.git",
+    "accountId": "83e6c1a2-4dff-4a3d-beaa-8da48c34305c"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -45,35 +52,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/IdeaProject/ExclForFile&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BidTest.executor": "Run",
+    "Application.ExclForFile.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/IdeaProject/ExclForFile/dist/lib/spring-core-5.0.13.RELEASE.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.28288823",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\IdeaProject\ExclForFile\dist\lib" />
+      <recent name="C:\IdeaProject\ExclForFile\dist\files" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\NetbeansProjects\ExclForFile\dist\lib" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tools" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.MainFile">
+  <component name="RunManager" selected="Application.BidTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -81,6 +97,19 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BidTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bidTest.BidTest" />
+      <module name="ExclForFile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bidTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,8 +136,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainFile" />
+        <item itemvalue="Application.BidTest" />
         <item itemvalue="Application.ExclForFile" />
+        <item itemvalue="Application.MainFile" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +175,8 @@
       <workItem from="1705735441483" duration="14000" />
       <workItem from="1724050280358" duration="433000" />
       <workItem from="1732599740783" duration="1941000" />
-      <workItem from="1734072422637" duration="629000" />
+      <workItem from="1734072422637" duration="4385000" />
+      <workItem from="1734076822179" duration="6113000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675303067073</created>
@@ -197,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695020693518</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix(ExcelForFile): 重构ObsClient&#10;&#10;1.重构ObsClient">
+      <option name="closed" value="true" />
+      <created>1734073076786</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734073076786</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +261,7 @@
     <MESSAGE value="fix(ExcelForFile): 补全依赖" />
     <MESSAGE value="fix(ExcelForFile): 运行新的文件" />
     <MESSAGE value="fix(ExcelForFile): 修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(ExcelForFile): 修改" />
+    <MESSAGE value="fix(ExcelForFile): 重构ObsClient&#10;&#10;1.重构ObsClient" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(ExcelForFile): 重构ObsClient&#10;&#10;1.重构ObsClient" />
   </component>
 </project>
