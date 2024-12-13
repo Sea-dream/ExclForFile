@@ -12,6 +12,7 @@ import com.spire.data.table.DataRowCollection;
 import com.spire.data.table.DataTable;
 import com.spire.xls.Workbook;
 import com.spire.xls.Worksheet;
+import tools.MyOBSClientRelease;
 
 import java.io.File;
 import java.io.IOException;
@@ -30,11 +31,8 @@ public class ExclForFile {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String endPoint = "https://183.134.72.90";
-        String ak = "QDKU0HPLR9X40EEA7DBR";
-        String sk = "eoPXA7z541ihdBSMHsxJNAkF5LTOFcePLZ3wLVQc";
         // 创建ObsClient实例
-        ObsClient obsClient = new ObsClient(ak, sk, endPoint);
+        ObsClient obsClient = MyOBSClientRelease.getObsClient();
         try {
             // TODO code application logic here
             // 获取attachment_id 串
@@ -93,7 +91,7 @@ public class ExclForFile {
             // 创建ObsClient实例
             result.forEach(item -> {
                 try {
-                    ObsObject obsObject = obsClient.getObject("docflex", item.getObsKeyString());
+                    ObsObject obsObject = obsClient.getObject(MyOBSClientRelease.bucket, item.getObsKeyString());
                     FileUtil.writeFromStream(obsObject.getObjectContent(), new File("test\\" + item.getFilePathInfo() + "\\" + item.getFileNameString()));
                     System.out.println("Success key: " + item.getObsKeyString());
                 } catch (ObsException e) {
