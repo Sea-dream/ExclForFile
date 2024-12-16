@@ -72,6 +72,9 @@ public class AddMark {
      */
     private static TrueTypeFont loadSystemFont() {
         //load 操作系统的默认字体. 宋体
+        final String DEFAULT_TTF_FILENAME = "simsun.ttf";
+        final String DEFAULT_TTC_FILENAME = "simsun.ttc";
+        final String DEFAULT_FONT_NAME = "SimSun";
         FontFileFinder fontFileFinder = new FontFileFinder();
         for (URI uri : fontFileFinder.find()) {
             try {
@@ -89,7 +92,6 @@ public class AddMark {
                 throw new RuntimeException("加载操作系统字体失败", e);
             }
         }
-
         return null;
     }
 }
