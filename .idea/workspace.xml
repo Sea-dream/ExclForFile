@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c8eeed3-fe03-4edb-bbdf-1f08f1b6ceb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/guava_31_1_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/spring_core_5_0_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/files/lists.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/lib/guava-31.1-jre.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/lib/spring-core-5.0.13.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bidTest/BidTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tools/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExclForFile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ExclForFile.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loadExcel/FileInfoClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loadExcel/FileInfoClass.java" afterDir="false" />
-    </list>
+    <list default="true" id="7c8eeed3-fe03-4edb-bbdf-1f08f1b6ceb4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,12 +26,12 @@
     &quot;assignee&quot;: &quot;Sea-dream&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:Sea-dream/ExclForFile.git",
-    "accountId": "83e6c1a2-4dff-4a3d-beaa-8da48c34305c"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Sea-dream/ExclForFile.git&quot;,
+    &quot;accountId&quot;: &quot;83e6c1a2-4dff-4a3d-beaa-8da48c34305c&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -56,6 +44,11 @@
   "keyToString": {
     "Application.BidTest.executor": "Run",
     "Application.ExclForFile.executor": "Debug",
+    "Downloaded.Files.Path": "C:\\IdeaProject\\ExclForFile\\dist\\lib",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
