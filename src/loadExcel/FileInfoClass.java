@@ -14,8 +14,12 @@ public class FileInfoClass {
     private String filePathInfo;
     
     private String fileNameString;
+
+    private String fileOriginalName;
     
     private String obsKeyString;
+
+    private Long fileSize;
 
     private File file;
 
@@ -37,12 +41,30 @@ public class FileInfoClass {
         return this;
     }
 
+    public String getFileOriginalName() {
+        return fileOriginalName;
+    }
+
+    public FileInfoClass setFileOriginalName(String fileOriginalName) {
+        this.fileOriginalName = fileOriginalName;
+        return this;
+    }
+
     public String getObsKeyString() {
         return obsKeyString;
     }
 
     public FileInfoClass setObsKeyString(String obsKeyString) {
         this.obsKeyString = obsKeyString;
+        return this;
+    }
+
+    public Long getFileSize() {
+        return fileSize;
+    }
+
+    public FileInfoClass setFileSize(Long fileSize) {
+        this.fileSize = fileSize;
         return this;
     }
 

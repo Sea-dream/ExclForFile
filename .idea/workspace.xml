@@ -7,7 +7,8 @@
     <list default="true" id="7c8eeed3-fe03-4edb-bbdf-1f08f1b6ceb4" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/bidTest/ExportFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bidTest/AddMark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bidTest/AddMark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bidTest/BidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bidTest/BidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loadExcel/FileInfoClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loadExcel/FileInfoClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,42 +45,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AddMark.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BidTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExclForFile.executor&quot;: &quot;Debug&quot;,
-    &quot;Downloaded.Files.Path&quot;: &quot;C:\\IdeaProject\\ExclForFile\\dist\\lib&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/IdeaProject/ExclForFile/dist/lib/pdfbox-2.0.27.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.28288823&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AddMark.executor": "Run",
+    "Application.BidTest.executor": "Run",
+    "Application.ExclForFile.executor": "Debug",
+    "Application.ExportFile.executor": "Run",
+    "Downloaded.Files.Path": "C:\\IdeaProject\\ExclForFile\\dist\\lib",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/IdeaProject/ExclForFile/dist/files",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.28288823",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\IdeaProject\ExclForFile\dist\lib" />
       <recent name="C:\IdeaProject\ExclForFile\dist\files" />
+      <recent name="C:\IdeaProject\ExclForFile\dist\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\NetbeansProjects\ExclForFile\dist\lib" />
@@ -88,7 +90,7 @@
       <recent name="tools" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AddMark">
+  <component name="RunManager" selected="Application.BidTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -133,6 +135,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExportFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bidTest.ExportFile" />
+      <module name="ExclForFile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bidTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="createExcel.MainFile" />
       <module name="ExclForFile" />
@@ -148,8 +163,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AddMark" />
         <item itemvalue="Application.BidTest" />
+        <item itemvalue="Application.ExportFile" />
+        <item itemvalue="Application.AddMark" />
         <item itemvalue="Application.ExclForFile" />
         <item itemvalue="Application.MainFile" />
       </list>
@@ -191,7 +207,7 @@
       <workItem from="1734072422637" duration="4385000" />
       <workItem from="1734076822179" duration="6113000" />
       <workItem from="1734334010606" duration="2573000" />
-      <workItem from="1735522545901" duration="321000" />
+      <workItem from="1735522545901" duration="14891000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675303067073</created>
@@ -291,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734334149124</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix(ExcelForFile): pdf水印尝试&#10;&#10;1.pdf水印尝试">
+      <option name="closed" value="true" />
+      <created>1735522956671</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1735522956671</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,5 +344,7 @@
     <MESSAGE value="fix(ExcelForFile): 增加pdfbox依赖&#10;&#10;1.增加pdfbox依赖" />
     <MESSAGE value="fix(ExcelForFile): pdf水印尝试&#10;&#10;1.pdf水印尝试" />
     <option name="LAST_COMMIT_MESSAGE" value="fix(ExcelForFile): pdf水印尝试&#10;&#10;1.pdf水印尝试" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
