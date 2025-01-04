@@ -5,7 +5,6 @@ import com.obs.services.exception.ObsException;
 import com.spire.data.table.DataColumnCollection;
 import com.spire.data.table.DataRowCollection;
 import com.spire.data.table.DataTable;
-import com.spire.xls.CellRange;
 import com.spire.xls.Workbook;
 import com.spire.xls.Worksheet;
 import loadExcel.FileInfoClass;
@@ -22,7 +21,7 @@ import java.util.concurrent.atomic.AtomicReference;
  * @author caiyongqing
  * @date 2024-12-13
  */
-public class BidTest {
+public class BidMatch {
     private static String obsKeyPrefix = "归档服务器/OAFileServer_TJ_2020_2021/BID/2025-02/";
     private static ObsClient obsClient = MyOBSClientRelease.getObsClient();
     private static String bucket = MyOBSClientRelease.bucket;
@@ -32,7 +31,7 @@ public class BidTest {
         List<FileInfoClass> fileInfoClassList = new ArrayList<>();
         List<FileInfoClass> saveFileInfoList = new ArrayList<>();
 
-        File folder = new File("E:\\未脱敏\\①合同全文（公众利益实体）");
+        File folder = new File("F:\\投标资料（脱敏\\合同-脱敏");
         if (folder.isDirectory()) {
             File[] files = folder.listFiles();
             if (files != null) {
@@ -55,15 +54,13 @@ public class BidTest {
 
         Workbook workbook = new Workbook();
         workbook.loadFromFile("F:\\test\\lists.xlsx");
-        Worksheet sheet = workbook.getWorksheets().get(7);
+        Worksheet sheet = workbook.getWorksheets().get(6);
         //导出文档数据
         DataTable dataTable = sheet.exportDataTable();
         DataRowCollection rowCollection = dataTable.getRows();
         DataColumnCollection colCollection = dataTable.getColumns();
         AtomicInteger workbookCount = new AtomicInteger(0);
         for (int i = 0; i < rowCollection.size(); i++) {
-            String attachmentId = StringUtil.GetTableUUID_new();
-            String fileName = StringUtil.GetTableUUID_new();
             AtomicReference<String> fileExtension = new AtomicReference<>();
             AtomicReference<FileInfoClass> currentFileInfoClass = new AtomicReference<>();
             for (int j = 0; j < colCollection.size(); j++) {
@@ -73,7 +70,6 @@ public class BidTest {
                         if (infoClass.getFileNameString().contains(fileMatchName)) {
                             String fileOriginalName = infoClass.getFileNameString();
                             fileExtension.set(fileOriginalName.substring(fileOriginalName.lastIndexOf(".")));
-                            infoClass.setObsKeyString(obsKeyPrefix + attachmentId + "/" + fileName + fileExtension.get());
                             currentFileInfoClass.set(infoClass);
                             saveFileInfoList.add(infoClass);
                             workbookCount.incrementAndGet();
@@ -82,30 +78,12 @@ public class BidTest {
                     });
                 }
                 if (currentFileInfoClass.get() != null) {
-                    if (colCollection.get(j).getLabel().equals("attachment_id")) {
-                        CellRange cell = sheet.getCellRange(i + 2, j + 1);
-                        cell.setValue(attachmentId);
-                    }
-                    if (colCollection.get(j).getLabel().equals("file_id")) {
-                        CellRange cell = sheet.getCellRange(i + 2, j + 1);
-                        cell.setValue(fileName);
-                    }
-                    if (colCollection.get(j).getLabel().equals("file_name")) {
-                        CellRange cell = sheet.getCellRange(i + 2, j + 1);
-                        cell.setValue(fileName + fileExtension.get());
-                    }
-                    if (colCollection.get(j).getLabel().equals("file_size")) {
-                        CellRange cell = sheet.getCellRange(i + 2, j + 1);
-                        cell.setValue(currentFileInfoClass.get().getFileSize().toString());
-                    }
-                    if (colCollection.get(j).getLabel().equals("file_extension")) {
-                        CellRange cell = sheet.getCellRange(i + 2, j + 1);
-                        cell.setValue(fileExtension.get());
+                    if (colCollection.get(j).getLabel().equals("obsKey")) {
+                        currentFileInfoClass.get().setObsKeyString(rowCollection.get(i).getString(j));
                     }
                 }
             }
         }
-        workbook.save();
 
         AtomicInteger count = new AtomicInteger(0);
         saveFileInfoList
