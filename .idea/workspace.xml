@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c8eeed3-fe03-4edb-bbdf-1f08f1b6ceb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bidTest/BidMatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bidTest/AddMark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bidTest/AddMark.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bidTest/BidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bidTest/BidTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,38 +44,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AddMark.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BidMatch.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BidRelease.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BidTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExclForFile.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.ExportFile.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path&quot;: &quot;C:\\IdeaProject\\ExclForFile\\dist\\lib&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/IdeaProject/pdfbox&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.28288823&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AddMark.executor": "Debug",
+    "Application.BidMatch.executor": "Run",
+    "Application.BidRelease.executor": "Run",
+    "Application.BidTest.executor": "Run",
+    "Application.ExclForFile.executor": "Debug",
+    "Application.ExportFile.executor": "Run",
+    "Downloaded.Files.Path": "C:\\IdeaProject\\ExclForFile\\dist\\lib",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/IdeaProject/pdfbox",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.28288823",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -92,7 +92,7 @@
       <recent name="tools" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BidMatch">
+  <component name="RunManager" selected="Application.AddMark">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -171,18 +171,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BidMatch" />
+        <item itemvalue="Application.AddMark" />
         <item itemvalue="Application.BidTest" />
+        <item itemvalue="Application.BidMatch" />
         <item itemvalue="Application.BidRelease" />
         <item itemvalue="Application.ExportFile" />
-        <item itemvalue="Application.AddMark" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
       </set>
     </attachedChunks>
   </component>
@@ -221,6 +221,9 @@
       <workItem from="1735956040357" duration="11000" />
       <workItem from="1735971930397" duration="4872000" />
       <workItem from="1735977810278" duration="1890000" />
+      <workItem from="1736213316257" duration="4855000" />
+      <workItem from="1736300968836" duration="3000" />
+      <workItem from="1738723179987" duration="4980000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675303067073</created>

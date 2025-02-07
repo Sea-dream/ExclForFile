@@ -32,7 +32,7 @@ public class BidTest {
         List<FileInfoClass> fileInfoClassList = new ArrayList<>();
         List<FileInfoClass> saveFileInfoList = new ArrayList<>();
 
-        File folder = new File("E:\\未脱敏\\①合同全文（公众利益实体）");
+        File folder = new File("C:\\Users\\admin\\Desktop\\发票\\重复附件ID对应文件");
         if (folder.isDirectory()) {
             File[] files = folder.listFiles();
             if (files != null) {
@@ -55,7 +55,7 @@ public class BidTest {
 
         Workbook workbook = new Workbook();
         workbook.loadFromFile("F:\\test\\lists.xlsx");
-        Worksheet sheet = workbook.getWorksheets().get(7);
+        Worksheet sheet = workbook.getWorksheets().get(0);
         //导出文档数据
         DataTable dataTable = sheet.exportDataTable();
         DataRowCollection rowCollection = dataTable.getRows();

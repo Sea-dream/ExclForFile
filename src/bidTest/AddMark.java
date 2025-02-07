@@ -36,25 +36,19 @@ public class AddMark {
             doc.setAllSecurityToBeRemoved(true);
             for(PDPage page:doc.getPages()){
                 PDPageContentStream cs =new PDPageContentStream(doc,page,PDPageContentStream.AppendMode.APPEND,true,true);
-                String ts ="【文本】 编号编号 仅测试时使用";
+                String ts = "【文本】 编号编号 仅测试时使用【文本】 编号编号 仅测试时使用【文本】 编号编号 仅测试时使用【文本】 编号编号 仅测试时使用【文本】 编号编号 仅测试时使用【文本】 编号编号 仅测试时使用";
                 PDFont font = PDType0Font.load(doc, loadSystemFont(), true);
 
-                float fontSize =25.0f;
+                float fontSize = 15.0f;
                 PDExtendedGraphicsState r0 =new PDExtendedGraphicsState();
-                r0.setNonStrokingAlphaConstant(0.5f);
+                r0.setNonStrokingAlphaConstant(0.3f);
                 r0.setAlphaSourceFlag(true);
                 cs.setGraphicsStateParameters(r0);
-                cs.setNonStrokingColor(200 / 225f,200 / 225f,200 / 225f);
+                cs.setNonStrokingColor(100 / 225f, 100 / 225f, 100 / 225f);
 
                 cs.beginText();
                 cs.setFont(font,fontSize);
-                cs.setTextMatrix(Matrix.getRotateInstance(0.5,100f,250f));
-                cs.showText(ts);
-                cs.endText();
-
-                cs.beginText();
-                cs.setFont(font,fontSize);
-                cs.setTextMatrix(Matrix.getRotateInstance(0.5,100f,550f));
+                cs.setTextMatrix(Matrix.getRotateInstance(0.9, -10f, 50f));
                 cs.showText(ts);
                 cs.endText();
                 cs.close();
