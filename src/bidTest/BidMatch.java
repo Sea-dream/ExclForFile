@@ -5,10 +5,11 @@ import com.obs.services.exception.ObsException;
 import com.spire.data.table.DataColumnCollection;
 import com.spire.data.table.DataRowCollection;
 import com.spire.data.table.DataTable;
+import com.spire.xls.CellRange;
 import com.spire.xls.Workbook;
 import com.spire.xls.Worksheet;
 import loadExcel.FileInfoClass;
-import tools.MyOBSClientRelease;
+import tools.MyOBSClientTest;
 import tools.StringUtil;
 
 import java.io.File;
@@ -22,16 +23,16 @@ import java.util.concurrent.atomic.AtomicReference;
  * @date 2024-12-13
  */
 public class BidMatch {
-    private static String obsKeyPrefix = "归档服务器/OAFileServer_TJ_2020_2021/BID/2025-02/";
-    private static ObsClient obsClient = MyOBSClientRelease.getObsClient();
-    private static String bucket = MyOBSClientRelease.bucket;
+    private static String obsKeyPrefix = "BID/2025-03/";
+    private static ObsClient obsClient = MyOBSClientTest.getObsClient();
+    private static String bucket = MyOBSClientTest.bucket;
 
     public static void main(String[] args) throws Exception {
 
         List<FileInfoClass> fileInfoClassList = new ArrayList<>();
         List<FileInfoClass> saveFileInfoList = new ArrayList<>();
 
-        File folder = new File("F:\\投标资料（脱敏\\合同-脱敏");
+        File folder = new File("C:\\Users\\admin\\Desktop\\generated_files");
         if (folder.isDirectory()) {
             File[] files = folder.listFiles();
             if (files != null) {
@@ -53,8 +54,8 @@ public class BidMatch {
         System.out.println("File Total: " + fileInfoClassList.size());
 
         Workbook workbook = new Workbook();
-        workbook.loadFromFile("F:\\test\\lists.xlsx");
-        Worksheet sheet = workbook.getWorksheets().get(6);
+        workbook.loadFromFile("C:\\Users\\admin\\Desktop\\file_normal_2019.xlsx");
+        Worksheet sheet = workbook.getWorksheets().get(0);
         //导出文档数据
         DataTable dataTable = sheet.exportDataTable();
         DataRowCollection rowCollection = dataTable.getRows();
@@ -78,12 +79,18 @@ public class BidMatch {
                     });
                 }
                 if (currentFileInfoClass.get() != null) {
+                    if (colCollection.get(j).getLabel().equals("file_size")) {
+                        CellRange cell = sheet.getCellRange(i + 2, j + 1);
+                        cell.setValue(currentFileInfoClass.get().getFileSize().toString());
+                    }
                     if (colCollection.get(j).getLabel().equals("obsKey")) {
                         currentFileInfoClass.get().setObsKeyString(rowCollection.get(i).getString(j));
                     }
                 }
             }
         }
+
+        workbook.save();
 
         AtomicInteger count = new AtomicInteger(0);
         saveFileInfoList

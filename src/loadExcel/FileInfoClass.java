@@ -16,6 +16,8 @@ public class FileInfoClass {
     private String fileNameString;
 
     private String fileOriginalName;
+
+    private String fileExtension;
     
     private String obsKeyString;
 
@@ -47,6 +49,15 @@ public class FileInfoClass {
 
     public FileInfoClass setFileOriginalName(String fileOriginalName) {
         this.fileOriginalName = fileOriginalName;
+        return this;
+    }
+
+    public String getFileExtension() {
+        return fileExtension;
+    }
+
+    public FileInfoClass setFileExtension(String fileExtension) {
+        this.fileExtension = fileExtension;
         return this;
     }
 

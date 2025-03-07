@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c8eeed3-fe03-4edb-bbdf-1f08f1b6ceb4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_net.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/docx4j_JAXB_ReferenceImpl.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/docx4j_core.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/docTest/DocxToDocx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/docTest/Dox4j.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/docTest/Watermark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loadExcel/ExpenseImg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tools/MyFtpClientLocal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tools/MyFtpClientRelease.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExclForFile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ExclForFile.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bidTest/AddMark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bidTest/AddMark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bidTest/BidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bidTest/BidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bidTest/BidMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bidTest/BidMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loadExcel/FileInfoClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loadExcel/FileInfoClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +57,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.AddMark.executor": "Debug",
+    "Application.AddMark.executor": "Run",
     "Application.BidMatch.executor": "Run",
     "Application.BidRelease.executor": "Run",
     "Application.BidTest.executor": "Run",
+    "Application.DocxToDocx.executor": "Run",
+    "Application.Dox4j.executor": "Run",
     "Application.ExclForFile.executor": "Debug",
+    "Application.ExpenseImg.executor": "Run",
     "Application.ExportFile.executor": "Run",
+    "Application.Watermark.executor": "Run",
     "Downloaded.Files.Path": "C:\\IdeaProject\\ExclForFile\\dist\\lib",
     "Downloaded.Files.Path.Enabled": "true",
     "Repository.Attach.Annotations": "false",
@@ -64,7 +79,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/IdeaProject/pdfbox",
+    "last_opened_file_path": "C:/IdeaProject/docx4j-samples-docx4j-8.3.14",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,7 +87,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.28288823",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -88,11 +103,12 @@
       <recent name="E:\NetbeansProjects\ExclForFile\dist\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="bidTest" />
       <recent name="tools" />
+      <recent name="docTest" />
+      <recent name="bidTest" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AddMark">
+  <component name="RunManager" selected="Application.ExpenseImg">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -130,12 +146,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BidRelease" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bidTest.BidRelease" />
+    <configuration name="DocxToDocx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="docTest.DocxToDocx" />
       <module name="ExclForFile" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bidTest.*" />
+          <option name="PATTERN" value="docTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +159,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BidTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bidTest.BidTest" />
+    <configuration name="Dox4j" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="docTest.Dox4j" />
       <module name="ExclForFile" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bidTest.*" />
+          <option name="PATTERN" value="docTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,12 +172,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExportFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bidTest.ExportFile" />
+    <configuration name="ExpenseImg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="loadExcel.ExpenseImg" />
       <module name="ExclForFile" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bidTest.*" />
+          <option name="PATTERN" value="loadExcel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,18 +187,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AddMark" />
-        <item itemvalue="Application.BidTest" />
+        <item itemvalue="Application.ExpenseImg" />
         <item itemvalue="Application.BidMatch" />
-        <item itemvalue="Application.BidRelease" />
-        <item itemvalue="Application.ExportFile" />
+        <item itemvalue="Application.DocxToDocx" />
+        <item itemvalue="Application.Dox4j" />
+        <item itemvalue="Application.AddMark" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.39" />
       </set>
     </attachedChunks>
   </component>
@@ -224,6 +240,12 @@
       <workItem from="1736213316257" duration="4855000" />
       <workItem from="1736300968836" duration="3000" />
       <workItem from="1738723179987" duration="4980000" />
+      <workItem from="1739150915318" duration="9909000" />
+      <workItem from="1739239866139" duration="103000" />
+      <workItem from="1739274955619" duration="4125000" />
+      <workItem from="1739410309640" duration="24000" />
+      <workItem from="1739496258669" duration="197000" />
+      <workItem from="1741316521170" duration="19256000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675303067073</created>

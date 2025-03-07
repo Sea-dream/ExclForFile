@@ -1,0 +1,33 @@
+<component name="libraryTable">
+  <library name="docx4j.core" type="repository">
+    <properties maven-id="org.docx4j:docx4j-core:8.3.14" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/lib/docx4j-core-8.3.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/docx4j-openxml-objects-8.3.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/docx4j-openxml-objects-pml-8.3.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/docx4j-openxml-objects-sml-8.3.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/jaxb-svg11-1.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/mbassador-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/jcl-over-slf4j-2.0.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/commons-lang3-3.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/commons-compress-1.27.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/commons-codec-1.16.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/commons-io-2.15.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/xmlgraphics-commons-2.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/xalan-metainf-8.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/xalan-interpretive-8.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/xalan-serializer-8.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/wmf2svg-0.9.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/antlr-runtime-3.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/stringtemplate-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/antlr-2.7.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/checker-qual-2.8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/error_prone_annotations-2.3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/fontbox-2.0.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/qdox-1.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/slf4j-api-2.0.13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

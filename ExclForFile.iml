@@ -17,5 +17,9 @@
     <orderEntry type="library" name="commons-logging-1.2" level="project" />
     <orderEntry type="library" name="fontbox-2.0.27" level="project" />
     <orderEntry type="library" name="pdfbox-2.0.27" level="project" />
+    <orderEntry type="library" name="docx4j.core" level="project" />
+    <orderEntry type="library" name="docx4j.JAXB.ReferenceImpl" level="project" />
+    <orderEntry type="library" name="commons.net" level="project" />
+    <orderEntry type="library" name="ofdrw.converter" level="project" />
   </component>
 </module>

@@ -11,9 +11,12 @@ import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.font.PDFont;
 import org.apache.pdfbox.pdmodel.font.PDType0Font;
 import org.apache.pdfbox.pdmodel.graphics.state.PDExtendedGraphicsState;
+import org.apache.pdfbox.rendering.PDFRenderer;
 import org.apache.pdfbox.util.Matrix;
 import tools.MyOBSClientTest;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.net.URI;
@@ -34,6 +37,7 @@ public class AddMark {
         try (PDDocument doc = PDDocument.load(obsClient.getObject(MyOBSClientTest.bucket,
                 obsKeyPrefix + "20241213-173205901-90399342-77534485-E7725098/20241213-173205902-65279579-16259765-6E773684.pdf").getObjectContent())) {
             doc.setAllSecurityToBeRemoved(true);
+            PDFRenderer renderer = new PDFRenderer(doc);
             for(PDPage page:doc.getPages()){
                 PDPageContentStream cs =new PDPageContentStream(doc,page,PDPageContentStream.AppendMode.APPEND,true,true);
                 String ts = "【文本】 编号编号 仅测试时使用【文本】 编号编号 仅测试时使用【文本】 编号编号 仅测试时使用【文本】 编号编号 仅测试时使用【文本】 编号编号 仅测试时使用【文本】 编号编号 仅测试时使用";
@@ -53,7 +57,14 @@ public class AddMark {
                 cs.endText();
                 cs.close();
             }
-            doc.save(new File("dist/files/out.pdf"));
+            int pages = doc.getNumberOfPages();
+            for (int i = 0; i < pages; i++) {
+                BufferedImage image = renderer.renderImageWithDPI(0, 300);
+
+                //Writing the image to a file
+                ImageIO.write(image, "png", new File("dist/files/out-" + i + ".png"));
+            }
+
         } catch (Exception e) {
             e.printStackTrace();
         }
